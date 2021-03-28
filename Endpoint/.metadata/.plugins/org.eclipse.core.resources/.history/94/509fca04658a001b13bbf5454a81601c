@@ -1,0 +1,19 @@
+package com.cloudzoneInfoConnect.WebApp.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "logindata")
+public class LoginController {
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="password")
+	private String password;
+	
+	@Column(name="role")
+	private int role;
+}

@@ -1,0 +1,5 @@
+package com.cloudzoneInfoConnect.WebApp.exception;
+
+public class GlobalExceptionHandler {
+
+}

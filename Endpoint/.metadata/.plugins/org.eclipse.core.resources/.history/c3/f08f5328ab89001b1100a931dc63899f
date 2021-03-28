@@ -1,0 +1,32 @@
+package com.cloudzoneInfoConnect.WebApp.controller;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cloudzoneInfoConnect.WebApp.model.Employee;
+import com.cloudzoneInfoConnect.WebApp.repository.EmployeeRepository;
+
+@RestController
+@RequestMapping("/api/v1")
+public class EmployeeController {
+
+	@Autowired
+	private EmployeeRepository employeeRepository;
+	
+	@GetMapping("/employees")
+	public List<Employee> getAllEmployees(){
+		
+		return employeeRepository.findAll();
+	}
+	
+	// Employee Rest aPI
+	
+	public Employee createEmployee(Employee employee) {
+		return employeeRepository.save(employee);
+	}
+}

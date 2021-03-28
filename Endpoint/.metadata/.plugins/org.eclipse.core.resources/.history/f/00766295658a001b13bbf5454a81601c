@@ -1,0 +1,13 @@
+package com.cloudzoneInfoConnect.WebApp.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cloudzoneInfoConnect.WebApp.model.LoginController;
+
+public interface LoginRepository extends JpaRepository<LoginController, Long> {
+
+	Optional<LoginController> findById(String email);
+
+}

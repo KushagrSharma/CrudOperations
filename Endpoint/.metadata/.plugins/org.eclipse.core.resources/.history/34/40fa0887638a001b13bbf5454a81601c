@@ -1,0 +1,5 @@
+package com.cloudzoneInfoConnect.WebApp.model;
+
+public class LoginController {
+
+}

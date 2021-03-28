@@ -1,0 +1,8 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/spingangularcrud?allowPublicKeyRetrieval=true&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=
+
+
+<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+spring.jpa.properties.hibernate.globally_quoted_identifiers=true
+spring.jpa.hibernate.ddl-auto=create

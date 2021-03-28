@@ -1,0 +1,11 @@
+package com.cloudzoneInfoConnect.WebApp.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
+public class LoginController {
+	private String email;
+	private String password;
+}
